@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { STATIC_VALUES } from "@constants/string";
-import myPicture from "@public/assets/PNG/myPicture.png";
+import myPicture from "@public/assets/JPEG/myPicture.jpg";
 import githubHomeIcon from "@public/assets/PNG/github.png";
 import linkedinHomeIcon from "@public/assets/PNG/linkedin.png";
 import CustomButton from "@components/CustomButton/CustomButton";
@@ -50,7 +50,7 @@ function Home() {
           <Image
             src={myPicture}
             alt="Linkedin Logo"
-            className="w-full md:w-3/4 object-fill rounded-md"
+            className="w-full md:w-3/6 object-fill rounded-md"
             width={400}
             height={60}
           />
@@ -74,7 +74,10 @@ function Home() {
                   : "py-14 border-b-2 border-secondary-border"
               }`}
             >
-              <CustomProjectCard projectDetails={projectDetails} />
+              <CustomProjectCard
+                projectDetails={projectDetails}
+                index={index + 1}
+              />
             </div>
           ))}
       </div>

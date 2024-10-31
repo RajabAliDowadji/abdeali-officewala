@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { STATIC_VALUES } from "@constants/string";
 import listIcon from "@public/assets/PNG/list.png";
-import myPicture from "@public/assets/PNG/myPicture.png";
+import mySkill from "@public/assets/JPEG/mySkill.jpg";
 import githubHomeIcon from "@public/assets/PNG/github.png";
 import linkedinHomeIcon from "@public/assets/PNG/linkedin.png";
 import CustomButton from "@components/CustomButton/CustomButton";
@@ -54,11 +54,11 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-2 py-14 border-b-2 border-primary-border">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-2 py-14 border-b-2 border-primary-border items-center">
         <Image
-          src={myPicture}
+          src={mySkill}
           alt="Linkedin Logo"
-          className="w-full md:w-3/4 object-fill rounded-md"
+          className="w-full md:w-4/6 object-fill rounded-md"
           width={400}
           height={60}
         />
